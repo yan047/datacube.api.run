@@ -1,8 +1,8 @@
-# Version: 1.3
+# Version: 1.4
 # Name: datacube.api.run
-# for Python 3.5
+# for Python 3.6
 
-FROM yan047/agdc2:1.6
+FROM yan047/agdc2:1.7
 
 MAINTAINER "boyan.au@gmail.com"
 
