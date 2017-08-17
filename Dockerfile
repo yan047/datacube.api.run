@@ -20,10 +20,11 @@ USER root
 # install dependencies
 RUN conda install Flask -y --quiet
 
-# create directories
-RUN mkdir -p "$DATACUBE_API_DIR" 
+# copy datacube-ws source code to the image
+COPY src "$DATACUBE_API_DIR" 
 
 # change to work directory
 WORKDIR "$DATACUBE_API_DIR"
+
 
 
